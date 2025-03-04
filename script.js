@@ -40,7 +40,8 @@ function askRemoveAllumette() {
     } while (
       nombreChoisi > 6 ||
       nombreChoisi < 1 ||
-      nombreChoisi > nombreAllumette
+      nombreChoisi > nombreAllumette ||
+      isNaN(nombreChoisi)
     );
     nombreAllumette -= nombreChoisi; // Mieux qu'une boucle for
     alert(`Il reste ${nombreAllumette} Allumettes`);
