@@ -4,8 +4,6 @@ let nombreChoisi;
 let indexJoueur = 0;
 let nombreDeJoueur;
 
-const allumetteAffichage = document.querySelector("#allumette");
-
 function askNombreJoueur() {
   while (!nombreDeJoueur || isNaN(nombreDeJoueur)) {
     nombreDeJoueur = Number(prompt("Entrez le nombre de joueur :"));
